@@ -1,0 +1,5 @@
+{
+    "scripts": {
+        "build": "cd anton-portfolio && npm run build"
+    }
+}
