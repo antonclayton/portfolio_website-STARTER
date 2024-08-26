@@ -1,0 +1,66 @@
+.portfolio__contact {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.portfolio__contact-container {
+    margin: 4rem 0rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    flex-direction: column;
+
+    width: 100%;
+}
+
+.portfolio__contact-container p {
+    margin: 2rem;
+}
+
+/* .portfolio__contact-container_box {
+    outline: none;
+    margin: 0.25rem 1rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+}
+
+.portfolio__contact-container_name {
+    width: 75%;
+    height: 2rem;
+    
+    padding-left: 0.5rem
+}
+
+.portfolio__contact-container_name:focus {
+    outline: none;
+}
+.portfolio__contact-container_email {
+    width: 75%;
+    height: 2rem;
+
+    padding-left: 0.5rem
+}
+
+.portfolio__contact-container_email:focus {
+    outline: none;
+}
+
+.portfolio__contact-container_message {
+    width: 75%;
+    height: 5rem;
+
+    padding-left: 0.5rem
+}
+
+.portfolio__contact-container_message {
+    outline: none;
+} */
+

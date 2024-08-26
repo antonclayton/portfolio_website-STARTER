@@ -1,0 +1,202 @@
+.portfolio__navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--color-space);
+
+    padding: 1rem 4rem;
+
+    z-index: 1000;
+    
+}
+
+.portfolio__navbar-logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 2rem;
+
+    transition: transform 0.4s ease-in-out;
+}
+
+.portfolio__navbar-logo a {
+    font-family: var(--font-alt);
+    color: var(--color-powder);
+    font-weight: bold;
+    font-size: 34px;
+    line-height: 68px;
+    letter-spacing: 0.04em;
+    text-transform: capitalize;
+}
+
+.portfolio__navbar-links {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    list-style: none;
+}
+
+.portfolio__navbar-links li {
+    margin: 0 2rem;
+    cursor: pointer;
+
+    font-weight: bold;
+
+    transition: transform 0.4s ease-in-out; 
+}
+
+.contact__button {
+    background-color: var(--color-vista);
+    color: var(--color-powder);
+    font-family: var(--font-alt);
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    line-height: 28px;
+    font-size: 16px;
+    padding: 0.5rem 1.5rem;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.portfolio__navbar-links li:hover {
+    color: var(--color-powder-hover);
+    border-bottom: 1px solid var(--color-vista);
+
+    transform: scale(1.03);
+    /* transition: transform 0.4s ease; */
+}
+
+.portfolio__navbar-logo:hover {
+    transform: scale(1.03);
+    /* transition: transform 0.4s ease; */
+}
+
+.app__navbar-smallscreen_overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: var(--color-space);
+    transition: 0.5s ease;
+
+    flex-direction: column;
+    z-index: 5;
+}
+
+.app__navbar-smallscreen_overlay .overlay__close {
+    color: var(--color-vista);
+    cursor: pointer;
+    
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+
+.portfolio__navbar-smallscreen {
+    display: none;
+}
+
+.portfolio__navbar-smallscreen_links {
+    list-style: none;
+}
+
+.portfolio__navbar-smallscreen_links li {
+    margin: 5rem;
+    cursor: pointer;
+    color: var(--color-powder);
+    font-size: 2.5rem;
+    text-align: center;
+    font-family: var(--font-alt);
+    font-weight: bold;
+
+    transition: transform 0.3s ease-in-out;
+}
+
+.portfolio__navbar-smallscreen_links li:hover {
+    transform: scale(1.04);
+    /* transition: transform 0.2s ease; */
+}
+
+.portfolio__navbar-smallscreen_links li:not(:last-child) a {
+    padding-bottom: 0.25rem;
+    border-bottom: 2px solid var(--color-vista);
+}
+
+
+.portfolio__navbar-smallscreen_links .contact__button:hover {
+    background-color: var(--color-vista-hover);
+    transform: scale(1.03);
+}
+
+/* .portfolio__navbar-smallscreen_links li:hover {
+    color: var(--color-powder-hover);
+    border-bottom: 1px solid var(--color-vista);
+} */
+
+.portfolio__navbar-smallscreen_hamburger {
+    cursor: pointer;
+}
+
+.portfolio__navbar-smallscreen_hamburger:hover {
+    transform: scale(1.05);
+    transition: transform 0.4s ease;
+}
+
+
+@media screen and (max-width: 1150px) {
+
+    .portfolio__navbar-links {
+        display: none;
+    }
+
+    .portfolio__navbar-smallscreen {
+        display: flex;
+    }
+
+    .contact__button {
+        padding: 1rem 1.5rem;
+    }
+
+    .portfolio__navbar-smallscreen_links li {
+        margin: 8rem;
+    }
+}
+
+@media screen and (max-width: 650px) {
+
+    .portfolio__navbar-logo {
+        margin-left: 0rem;
+    }
+    .portfolio__navbar-logo a  {
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    .portfolio__navbar-smallscreen_links li {
+        margin: 7rem;
+    }
+
+}
+
+@media screen and (max-width: 450px) {
+    .portfolio__navbar-smallscreen_links li {
+        margin: 5rem;
+        font-size: 2rem;
+    }
+
+    .portfolio__navbar-logo a  {
+        font-size: 22px;
+        line-height: 30px;
+    }
+}

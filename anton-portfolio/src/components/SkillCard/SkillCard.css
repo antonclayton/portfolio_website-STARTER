@@ -1,0 +1,75 @@
+.portfolio__skillcard {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 1rem 2rem;
+
+    border: 2px solid var(--color-space-dark);
+    border-radius: 1rem;
+
+    width: 100%;
+    height: 100%;
+}
+
+.portfolio__skillcard p {
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    font-weight: bold;
+
+    font-family: var(--font-alt);
+    color: var(--color-powder);
+    letter-spacing: 0.04em;
+    line-height: 28px;
+    font-size: 16px;
+}
+
+.portfolio__skillcard-image {
+    display: flex;
+    justify-content: center;
+}
+
+.portfolio__skillcard-image img {
+    width: 100px;
+    height: 100px;
+}
+
+@media screen and (max-width: 1150px) {
+    .portfolio__skillcard-image img {
+        width: 75px;
+        height: 75px;
+    }
+
+    .portfolio__skillcard {
+        padding: 0.75rem 1.5rem;
+    }
+
+    .portfolio__skillcard p {
+        font-size: 12px;
+        line-height: 24px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .portfolio__skillcard-image img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .portfolio__skillcard {
+        padding: 0.5rem 1rem;
+    }
+
+    .portfolio__skillcard p {
+        font-size: 10px;
+        line-height: 20px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .portfolio__skillcard p {
+        font-size: 9px;
+        line-height: 18px;
+    }
+}

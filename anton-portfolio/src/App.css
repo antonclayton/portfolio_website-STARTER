@@ -1,0 +1,126 @@
+.portfolio {
+  background: var(--color-space-dark);
+}
+
+.section__padding {
+  padding: 4rem 6rem;
+}
+
+.custom__button {
+    background-color: var(--color-vista);
+    color: var(--color-powder);
+    font-family: var(--font-base);
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    line-height: 28px;
+    font-size: 16px;
+    padding: 0.5rem 1.5rem;
+    border-radius: 1px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.p__opensans {
+  font-family: var(--font-alt);
+  color: var(--color-powder);
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  /* text-transform: capitalize; */
+  line-height: 28px;
+  font-size: 16px;
+}
+
+.p__cormorant {
+  font-family: var(--font-base);
+  color: var(--color-powder);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  font-feature-settings: 'tnum' on, 'lnum' on;
+  line-height: 29.9px;
+  font-size: 23px;
+}
+
+.h1__opensans {
+  font-family: var(--font-alt);
+  color: var(--color-powder);
+  font-size: 48px;
+  line-height: 68px;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+}
+
+.flex__center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.scroll__margin {
+  scroll-margin-top: 4rem;
+}
+
+
+
+@media screen and (min-width: 2000px) {
+  .custom__button,
+  .p__cormorant {
+    font-size: 37px;
+    line-height: 67px;
+  }
+
+  .p__opensans {
+    font-size: 30px;
+    line-height: 50px;
+  }
+
+  .headtext__cormorant {
+    font-size: 150px;
+    line-height: 210px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .section__padding {
+    padding: 4rem;
+  }
+
+  .scroll__margin {
+    scroll-margin-top: 2.5rem;
+  }
+
+  .h1__opensans {
+    font-size: 40px;
+    line-height: 64px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .section__padding {
+    padding: 4rem 2rem;
+  }
+  
+  .p__cormorant {
+    font-size: 21px;
+  }
+
+  .p__opensans {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .p__opensans {
+    font-size: 12px;
+  }
+
+  .p__cormorant {
+    font-size: 19px;
+  }
+
+  .headtext__cormorant {
+    font-size: 45px;
+    line-height: 70px;
+  }
+}

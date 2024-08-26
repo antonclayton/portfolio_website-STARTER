@@ -1,0 +1,35 @@
+.portfolio__sectionTitle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.portfolio__sectionTitle span {
+    border: 1px solid var(--color-vista);
+    width: 13.5rem;
+}
+
+.portfolio__sectionTitle h1 {
+    font-family: var(--font-alt);
+    color: var(--color-powder);
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 50px;
+    letter-spacing: 0.04em;
+    text-transform: capitalize;
+}
+
+@media screen and (max-width: 1150px) {
+    .portfolio__sectionTitle h1 {
+        font-size: 28px;
+        line-height: 40px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .portfolio__sectionTitle h1 {
+        font-size: 24px;
+        line-height: 34px;
+    }
+}

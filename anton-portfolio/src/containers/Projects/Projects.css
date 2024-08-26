@@ -1,0 +1,51 @@
+.portfolio__projects {
+    color: var(--color-powder);;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+
+.portfolio__projects-container {
+    color: var(--color-powder);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.portfolio__projects-card {
+    flex: 1 1 30%;
+    max-width: 30%;
+    border-radius: 1rem;
+    min-height: 300px;
+    margin-top: 2rem;
+
+    box-shadow: 0 4px 8px rgba(159, 159, 159, 0.1);
+
+    background: var(--color-vista-hover);
+
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+}
+
+.portfolio__projects-card:hover {
+    background: var(--color-vista);
+    transform: scale(1.03);
+    box-shadow: 0 8px 16px rgba(187, 187, 187, 0.2);
+    /* cursor: pointer; */
+}
+
+@media screen and (max-width: 1150px) {
+    .portfolio__projects-card {
+        flex-basis: 45%;
+        max-width: 45%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .portfolio__projects-card {
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+}

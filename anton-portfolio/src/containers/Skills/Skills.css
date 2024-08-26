@@ -1,0 +1,58 @@
+.portfolio__skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.portfolio__skills-cardcontainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    margin-top: 2rem;
+}
+
+.portfolio__skills-cardcontainer_card {
+    margin: 3rem 4rem 1.5rem 4rem;
+
+    min-width: 200px;
+    min-height: 250px;
+
+    box-shadow: 0 0 15px 1px rgba(255, 255, 255, 0.6);
+    border-radius: 1rem;
+
+    transition: transform 0.3s ease-in-out
+}
+
+.portfolio__skills-cardcontainer_card:hover {
+    transform: scale(1.03);
+}
+
+@media screen and (max-width: 1150px) {
+
+    .portfolio__skills-cardcontainer_card {
+        min-width: 150px;
+        min-height: 187.5px;
+
+        margin: 2rem 3rem 1rem 3rem;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .portfolio__skills-cardcontainer_card {
+        min-width: 125px;
+        min-height: 156.5px;
+
+        margin: 1.5rem 2rem 0.75rem 2rem;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .portfolio__skills-cardcontainer_card {
+        min-width: 100px;
+        min-height: 125px;
+
+        margin: 1.5rem 1rem 0.75rem 1rem;
+    }
+}
