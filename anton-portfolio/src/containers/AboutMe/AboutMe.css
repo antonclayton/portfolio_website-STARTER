@@ -61,7 +61,7 @@
     font-family: var(--font-alt);
     padding: 1rem 2rem;
     border-radius: 1rem;
-
+    min-width: 150px;
     font-weight: bold;
 
     margin: 1rem;

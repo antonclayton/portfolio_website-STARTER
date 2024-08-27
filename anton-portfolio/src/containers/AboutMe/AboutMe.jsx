@@ -19,7 +19,7 @@ const AboutMe = () => {
                 </p>
 
                 <div className="portfolio__about-text_buttons">
-                    <a href="https://www.google.com" target="_blank" rel="noopener noreferrer" className="p__opensans">Download CV</a>
+                    <a href="https://docs.google.com/document/d/1FhEM25IeRcXlviaiJLJ8kmbXOWu4-soO/edit?usp=sharing&ouid=114654280299484254609&rtpof=true&sd=true" target="_blank" rel="noopener noreferrer" className="p__opensans">Resume</a>
                     <a href="#contact" className="p__opensans">Contact Me</a>
                 </div>
             </div>
